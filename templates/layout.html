@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+      <title>Flask App</title>
+    <link rel="stylesheet" href="{{url_for('static', filename='css/main.css')}}">
+    <meta charset="utf-8">
+
+  </head>
+  <body style="background-color:orange;">
+    <header>
+      <div class="container">
+        <h1 class="logo">ZI TILL I REACH THE SKY</h1>
+        <strong><nav>
+          <ul class="menu">
+            <li><a href="{{ url_for('home') }}">Home</a></li>
+            <li><a href="{{ url_for('about') }}">About</a></li>
+          </ul>
+        </nav></strong>
+      </div>
+
+    <div class="container">
+
+    </div>
+    <form id ="survey-form">
+
+    <h1 id="title" style="background-color: hsla(360, 100%, 100%, 0.5);" style="text-align:center;"> (*_^) Quick Coffee Survey</h1>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <section id="main">
+
+          <div class="container">
+          <p><font size="6"  color=hsla(93, 100%, 50%, 1) id="description">Welcome Please take a moment to fill out the survey below <br> our aim is to collect initial insight into the values and attitudes of coffee consumers which could
+    be applied to the objectives we share in independent coffee and serve as a foundation for further
+    research.</font></p>   </div>
+
+           <form id="survey-form" action="/my-handling-form-page"  method="post">
+
+         <div>
+       <label  id="name-label"  for="Name">Name:</label>
+        <input type="text" required id ="name" name= "user_name"  placeholder="your name"/>
+      </div>
+      <div>
+         <label id="email-label" for="Email">Email:</label>
+        <input type="email" required id="email" name= "user_email" placeholder="example@gmail.com"/>
+             </div>
+              <div>
+              <label id="number-label" for="Age">Age:</label>
+          <input type= "number" id="number" name= "age"  placeholder="age" min="0" max="9000"/> 
+             </div>
+<br><br>
+
+            </form>
+           <div>
+        <label for="dropdown">When do you usually drink coffee :</label>
+        <select id="dropdown">
+        <option value="Morning"> Morning </option>
+        <option value="Afternoon">Afternoon</option>
+        <option value="Evening">Evening</option>
+        <option value="Night">Night</option>
+          </select>
+        </div>
+
+        </div>
+
+
+
+      <div class="labels-radio">
+    <label for="labels-radio">....What type of coffee do you drink....</label>
+        <div>
+       <br> <input type="radio" name= "labels-radio" value= "Espresso"/>Espresso<br>
+        </div>
+        <input type="radio" name= "labels-radio" value= "Americano"/>Americano
+        <div>
+        <input type="radio" name= "labels-radio" value= "Mocha"/>Mocha
+       </div>
+        <div>
+        <input type="radio" name= "labels-radio" value= "Cappuccino "/>Cappuccino
+        </div>
+          </div>
+<br><br>
+    <div class="row-tab">
+      <div class="checkbox-labels">
+         <label for="checkbox-labels">How many cups per day:</lable>
+      </div>
+          <div>
+      <input type="checkbox" name="checkbox-labels" value="1"/>1</lable>
+      <input type="checkbox" name="checkbox-labels" value="2"/>2</lable>
+      <input type="checkbox" name="checkbox-labels" value="3"/>3</lable>
+        </lable>
+<br><br>
+      </div>
+      <br>
+    <div class "submit">
+       <textarea>Enter your comments here</textarea>
+      </div>
+      <br>
+      <div class="submit">
+     <button id="submit" type ="submit" onclick = "post">Submit</button>
+            </div>
+
+    </form>
+
+    {% block content %}
+    {% endblock %}
+
+
+  </body>
+</html>

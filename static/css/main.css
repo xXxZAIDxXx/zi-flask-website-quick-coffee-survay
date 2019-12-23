@@ -1,0 +1,156 @@
+body {
+background-color: black;
+
+margin: 0 auto;
+max-width: 700px;
+height: 100px;
+text-align: center;
+background-image:url("https://i.imgur.com/eXHzoF3.jpg");
+ background-size: cover;
+
+ margin: 100px;
+ display: inline-block;
+ font-size: 2.2em;
+}
+h1, .logo, .menu , header {
+  padding: 10px 0 30px 0;
+background-color: #E6E6FA;
+margin-right: auto;
+margin-left: auto;
+
+
+}
+
+
+p {
+
+font-weight: 900;
+font-size: 25px;
+margin: 50px;
+box-shadow: 1px 5px 100px gray;
+color: black;
+font-weight: lighter;
+}
+
+html { font-size: 2vw; }
+
+
+div {
+
+
+  text-align:center;
+  margin-right: auto;
+  font-weight: 900;
+
+}
+
+
+@media only screen and (max-width: 320px) {
+
+   body, p, div, h1, .logo, .menu , header{
+      font-size: 2em;
+   }
+
+}
+
+
+
+
+
+
+
+
+ @media (max-width: 650px) {
+	body.custom-background {
+		background-attachment: scroll;
+    margin-right: auto;
+    margin-left: auto;
+	}
+}
+@media (max-width: 375px){
+    .div {
+       margin-left: 20%;
+       font-size: 5mm;
+     }
+ }
+
+ @media (max-width: 375px){
+    table, th , td {
+       width: 1%;
+       font-size: 4mm;
+     }
+ }
+
+ @media (max-width: 375px){
+    h1 {
+       font-size: 6mm;
+ }
+ @media (max-width: 375px){
+    img{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        height: 100%;
+        width: 100%;
+    }
+
+ }
+
+
+ @media (max-width: 375px){
+    .row > div {
+        padding: 5px;
+        background-color: darksalmon;
+        border: 2px solid rgb(19, 68, 202);
+        margin-left: 1em;
+        margin-right: 1em;
+
+    }
+
+ }
+
+ @media (max-width: 375px){
+    .t{
+        font-size: 1px;
+    }
+
+ }
+}
+
+
+@media (max-width: 375px){
+    button{
+
+        margin-right: 73%;
+    }
+
+ }
+
+
+@media (max-width: 375px){
+    .btn-danger{
+
+        margin-left: 41%;
+
+    }
+
+ }
+
+
+
+
+@media (max-width: 375px){
+
+ .grid {
+    background-color: darkcyan;
+    display: grid;
+    padding: 10px;
+    grid-column-gap:5px;
+    grid-row-gap: 5px;
+    grid-template-columns: auto auto auto;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+ }
