@@ -8,7 +8,7 @@ background-image:url("https://i.imgur.com/eXHzoF3.jpg");
  background-size: cover;
 
 
- font-size: 1.2em;
+
 }
 h1, .logo, .menu , header {
   padding: 5px 0 10px 0;
@@ -21,7 +21,7 @@ h1, .logo, .menu , header {
 
 p {
 
-font-weight: 90;
+font-weight: 40;
 font-size: 25px;
 
 
